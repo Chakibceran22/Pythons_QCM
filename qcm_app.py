@@ -194,6 +194,7 @@ class QCMApp:
             return False, f"{Colors.YELLOW}No history found!{Colors.ENDC}"
         
         return True, user_history
+    
 
     def show_correct_answers(self, category: str, title: str) -> tuple[bool, str]:
         if category not in self.qcms or title not in self.qcms[category]:
@@ -217,22 +218,62 @@ class QCMApp:
             avg_score = stats['total_score'] / max(stats['quizzes_taken'], 1)
             print(f"{Colors.BLUE}{i}. {user}: {Colors.GREEN}{avg_score:.1f}%{Colors.ENDC}")
 
-def display_menu():
+def display_student_results(app):
     clear_screen()
-    print_fancy("🎓 QCM Application 🎓", Colors.YELLOW, bold=True)
-    print(f"\n{Colors.BLUE}1.{Colors.ENDC} Register")
-    print(f"{Colors.BLUE}2.{Colors.ENDC} Login")
-    print(f"{Colors.BLUE}3.{Colors.ENDC} Take QCM")
-    print(f"{Colors.BLUE}4.{Colors.ENDC} View History")
-    print(f"{Colors.BLUE}5.{Colors.ENDC} Show Correct Answers")
-    print(f"{Colors.BLUE}6.{Colors.ENDC} View Leaderboard")
-    print(f"{Colors.RED}7.{Colors.ENDC} Exit")
+    print_fancy("📊 Résultats des Étudiants 📊", Colors.YELLOW, bold=True)
 
-def main():
-    app = QCMApp()
+    if not app.history:
+        print(f"{Colors.RED}Aucun résultat trouvé !{Colors.ENDC}")
+        time.sleep(2)
+        return
 
+    # Parcourt l'historique des étudiants
+    for username, results in app.history.items():
+        print(f"\n{Colors.BLUE}Étudiant : {username}{Colors.ENDC}")
+        if not results:
+            print(f"{Colors.RED}Aucun QCM complété.{Colors.ENDC}")
+        else:
+            for result in results:
+                print(f"  - {Colors.GREEN}Date :{Colors.ENDC} {result['date']}")
+                print(f"    {Colors.GREEN}Catégorie :{Colors.ENDC} {result['category']}")
+                print(f"    {Colors.GREEN}Titre :{Colors.ENDC} {result['title']}")
+                print(f"    {Colors.GREEN}Score :{Colors.ENDC} {result['score']}%")
+                print(f"    {Colors.GREEN}Réponses correctes :{Colors.ENDC} {result['answers']}")
+    input(f"\n{Colors.YELLOW}Appuyez sur Entrée pour retourner au menu...{Colors.ENDC}")
+
+def display_menu_professeur(app):
+    """Affiche le menu pour l'espace professeur."""
     while True:
-        display_menu()
+        clear_screen()
+        print_fancy("👨‍🏫 Espace Professeur 👩‍🏫", Colors.YELLOW, bold=True)
+        print(f"{Colors.BLUE}1.{Colors.ENDC} Voir les résultats des étudiants")
+        print(f"{Colors.BLUE}2.{Colors.ENDC} Retour au menu principal")
+
+        choice = input(f"\n{Colors.GREEN}Entrez votre choix (1-2) : {Colors.ENDC}")
+
+        if choice == '1':
+            # Voir les résultats des étudiants
+            display_student_results(app)
+        elif choice == '2':
+            # Retour au menu principal
+            break
+        else:
+            print(f"{Colors.RED}Choix invalide. Veuillez réessayer.{Colors.ENDC}")
+            time.sleep(1)
+
+
+def display_menu_student(app):
+    while True:
+        clear_screen()
+        print_fancy("🎓 Espace Étudiant 🎓", Colors.YELLOW, bold=True)
+        print(f"{Colors.BLUE}1.{Colors.ENDC} Register")
+        print(f"{Colors.BLUE}2.{Colors.ENDC} Login")
+        print(f"{Colors.BLUE}3.{Colors.ENDC} Take QCM")
+        print(f"{Colors.BLUE}4.{Colors.ENDC} View History")
+        print(f"{Colors.BLUE}5.{Colors.ENDC} Show Correct Answers")
+        print(f"{Colors.BLUE}6.{Colors.ENDC} View Leaderboard")
+        print(f"{Colors.RED}7.{Colors.ENDC} Retour au menu principal")
+
         choice = input(f"\n{Colors.GREEN}Enter your choice (1-7): {Colors.ENDC}")
 
         if choice == '1':
@@ -317,13 +358,42 @@ def main():
             input(f"\n{Colors.YELLOW}Press Enter to continue...{Colors.ENDC}")
 
         elif choice == '7':
-            print_fancy("\n👋 Thank you for using the QCM Application! Goodbye!", Colors.GREEN, bold=True)
-            time.sleep(1)
             break
 
         else:
             print(f"{Colors.RED}Invalid choice! Please try again.{Colors.ENDC}")
             time.sleep(1)
+
+
+def display_menu(app):
+    """Affiche le menu principal pour choisir entre l'espace étudiant et professeur."""
+    while True:
+        clear_screen()
+        print_fancy("Bienvenue dans l'application QCM !", Colors.YELLOW, bold=True)
+        print(f"{Colors.BLUE}1.{Colors.ENDC} Espace Étudiant")
+        print(f"{Colors.BLUE}2.{Colors.ENDC} Espace Professeur")
+        print(f"{Colors.RED}3.{Colors.ENDC} Quitter")
+
+        choice = input(f"\n{Colors.GREEN}Entrez votre choix (1-3) : {Colors.ENDC}")
+
+        if choice == '1':
+            # Redirige vers l'espace étudiant
+            display_menu_student(app)
+        elif choice == '2':
+            # rajouter lajout dun qcm 
+            display_menu_professeur(app)
+        elif choice == '3':
+            print_fancy("\n👋 Merci d'avoir utilisé l'application QCM ! Au revoir !", Colors.GREEN, bold=True)
+            time.sleep(1)
+            break
+        else:
+            print(f"{Colors.RED}Choix invalide. Veuillez réessayer.{Colors.ENDC}")
+            time.sleep(1)
+def main():
+    """Point d'entrée principal de l'application."""
+    app = QCMApp()  # Crée une instance de l'application
+    display_menu(app)  # Appelle le menu principal
+
 
 if __name__ == "__main__":
     main()
