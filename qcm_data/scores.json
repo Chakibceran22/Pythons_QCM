@@ -1,9 +1,13 @@
 {
     "chakib": {
-        "total_score": 100.0,
-        "quizzes_taken": 1
+        "total_score": 0,
+        "quizzes_taken": 0
     },
     "chakib12": {
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "romy": {
         "total_score": 0,
         "quizzes_taken": 0
     }
