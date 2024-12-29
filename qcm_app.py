@@ -60,16 +60,22 @@ def check_answer(question: dict, user_answer: Union[int, list]) -> bool:
     if question.get('type') == 'multiple':
         return sorted(user_answer) == sorted(question['correct'])
     else:
-        return user_answer == question['correct']
-
+        # For single choice questions, convert single correct answer to int if it's in a list
+        correct = question['correct'] if isinstance(question['correct'], int) else question['correct'][0]
+        return user_answer == correct
+    
 def display_correct_answer(question: dict):
     """Display the correct answer(s) for both types of questions"""
     if question.get('type') == 'multiple':
         print(f"{Colors.GREEN}Correct answers:{Colors.ENDC}")
         for ans in question['correct']:
+            # Subtract 1 from the answer index since options are 0-based
             print(f"{Colors.GREEN}- {question['options'][ans-1]}{Colors.ENDC}")
     else:
-        print(f"{Colors.GREEN}Correct answer: {question['options'][question['correct']-1]}{Colors.ENDC}")
+        # For single choice questions, correct is a single number
+        correct_idx = question['correct'] if isinstance(question['correct'], int) else question['correct'][0]
+        print(f"{Colors.GREEN}Correct answer: {question['options'][correct_idx-1]}{Colors.ENDC}")
+
 
 class QCMApp:
     def __init__(self):

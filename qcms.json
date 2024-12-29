@@ -179,5 +179,61 @@
                 "type": "multiple"
             }
         ]
+    },
+    "Games": {
+        "GameDev": [
+            {
+                "question": "what is the name of showing an object in 3d art?",
+                "options": [
+                    "modeling",
+                    "rendering",
+                    "sculpting"
+                ],
+                "correct": [
+                    2
+                ],
+                "type": "single"
+            }
+        ],
+        "Elden Ring": [
+            {
+                "question": "what is the name of the last boss in the game(Spiler if you didnt play i highly recomend you play it)?",
+                "options": [
+                    "Radagon",
+                    "Radhan",
+                    "Malenia",
+                    "Soldier of Godrick"
+                ],
+                "correct": [
+                    1
+                ],
+                "type": "single"
+            },
+            {
+                "question": "what is the weapon class that applies bleed by default?",
+                "options": [
+                    "Hammers",
+                    "Katanas",
+                    "Spears",
+                    "LongSwords"
+                ],
+                "correct": [
+                    2
+                ],
+                "type": "single"
+            },
+            {
+                "question": "what is the weapon you get from defeating Malenia Blade of Miquella ?",
+                "options": [
+                    "Mace",
+                    "Hand of Malenia",
+                    "Spear"
+                ],
+                "correct": [
+                    2
+                ],
+                "type": "single"
+            }
+        ]
     }
 }
