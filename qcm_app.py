@@ -5,6 +5,7 @@ import time
 from typing import List, Dict, Any, Union
 import getpass
 
+
 class Colors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
@@ -124,10 +125,10 @@ class QCMApp:
             return True, f"{Colors.GREEN}Welcome back, {username}!{Colors.ENDC}"
         return False, f"{Colors.RED}Invalid username or password!{Colors.ENDC}"
 
-    def take_qcm(self, category: str, title: str) -> tuple[bool, str]:
+    def take_qcm(self, category: str, title: str, time_limit: int = 300) -> tuple[bool, str]:
         if not self.current_user:
             return False, f"{Colors.RED}Please login first!{Colors.ENDC}"
-        
+
         if category not in self.qcms or title not in self.qcms[category]:
             return False, f"{Colors.RED}QCM not found!{Colors.ENDC}"
 
@@ -135,22 +136,30 @@ class QCMApp:
         score = 0
         user_answers = []
         start_time = time.time()
+        end_time = start_time + time_limit
 
         clear_screen()
         print_fancy(f"🎯 Starting QCM: {title}", Colors.YELLOW, bold=True)
         print_fancy(f"Category: {category}", Colors.BLUE)
         print_fancy(f"Total questions: {len(questions)}\n", Colors.BLUE)
+        print_fancy(f"⏳ You have {time_limit // 60} minutes to complete the quiz.\n", Colors.RED)
 
         for i, q in enumerate(questions, 1):
+            remaining_time = int(end_time - time.time())
+            if remaining_time <= 0:
+                print(f"{Colors.RED}Time's up!{Colors.ENDC}")
+                break
+
             print(f"\n{Colors.BOLD}Question {i}/{len(questions)}{Colors.ENDC}")
             print(f"{Colors.YELLOW}{q['question']}{Colors.ENDC}\n")
-            
+
             for j, option in enumerate(q['options'], 1):
                 print(f"{Colors.BLUE}{j}. {option}{Colors.ENDC}")
-            
+
+            print(f"\n{Colors.YELLOW}⏳ Time remaining: {remaining_time} seconds{Colors.ENDC}")
             answer = handle_question_input(q)
             user_answers.append(answer)
-            
+
             if check_answer(q, answer):
                 score += 1
                 print(f"{Colors.GREEN}✓ Correct!{Colors.ENDC}")
@@ -158,12 +167,12 @@ class QCMApp:
                 print(f"{Colors.RED}✗ Incorrect!{Colors.ENDC}")
                 print("\nThe correct answer(s):")
                 display_correct_answer(q)
-            
+
             time.sleep(1)
 
         time_taken = time.time() - start_time
         percentage = (score / len(questions)) * 100
-        
+
         self.user_scores[self.current_user]['total_score'] += percentage
         self.user_scores[self.current_user]['quizzes_taken'] += 1
         self.save_data(os.path.join(self.data_dir, 'scores.json'), self.user_scores)
@@ -187,7 +196,7 @@ class QCMApp:
         print(f"\n{Colors.GREEN}Score: {percentage:.1f}%{Colors.ENDC}")
         print(f"{Colors.BLUE}Time taken: {time_taken:.1f} seconds{Colors.ENDC}")
         print(f"{Colors.YELLOW}Correct answers: {score}/{len(questions)}{Colors.ENDC}")
-        
+
         self.display_leaderboard()
         return True, ""
 
