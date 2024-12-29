@@ -240,6 +240,86 @@ def display_student_results(app):
                 print(f"    {Colors.GREEN}Score :{Colors.ENDC} {result['score']}%")
                 print(f"    {Colors.GREEN}Réponses correctes :{Colors.ENDC} {result['answers']}")
     input(f"\n{Colors.YELLOW}Appuyez sur Entrée pour retourner au menu...{Colors.ENDC}")
+def add_qcm(app):
+    """Permet au professeur d'ajouter une nouvelle catégorie ou un nouveau titre avec des questions."""
+    print_fancy("\n🔧 Professeur - Ajouter un QCM", Colors.YELLOW, bold=True)
+
+    # Charger les catégories existantes
+    categories = app.qcms.keys()
+    print_fancy("\nCatégories existantes:", Colors.BLUE)
+    for category in categories:
+        print(f"{Colors.BLUE}- {category}{Colors.ENDC}")
+
+    print(f"{Colors.GREEN}\nVoulez-vous ajouter à une catégorie existante ou en créer une nouvelle?{Colors.ENDC}")
+    print(f"{Colors.BLUE}1.{Colors.ENDC} Ajouter à une catégorie existante")
+    print(f"{Colors.BLUE}2.{Colors.ENDC} Créer une nouvelle catégorie")
+
+    choice = input(f"\n{Colors.GREEN}Votre choix (1 ou 2): {Colors.ENDC}")
+
+    if choice == '1':
+        # Ajouter à une catégorie existante
+        category = input(f"\n{Colors.GREEN}Entrez le nom de la catégorie existante: {Colors.ENDC}")
+        if category not in app.qcms:
+            print(f"{Colors.RED}Catégorie introuvable!{Colors.ENDC}")
+            return
+
+    elif choice == '2':
+        # Créer une nouvelle catégorie
+        category = input(f"\n{Colors.GREEN}Entrez le nom de la nouvelle catégorie: {Colors.ENDC}")
+        if category in app.qcms:
+            print(f"{Colors.RED}Cette catégorie existe déjà!{Colors.ENDC}")
+            return
+        app.qcms[category] = {}
+
+    else:
+        print(f"{Colors.RED}Choix invalide!{Colors.ENDC}")
+        return
+
+    # Ajouter un nouveau titre à la catégorie
+    title = input(f"\n{Colors.GREEN}Entrez le titre du nouveau QCM: {Colors.ENDC}")
+    if title in app.qcms[category]:
+        print(f"{Colors.RED}Ce titre existe déjà dans la catégorie!{Colors.ENDC}")
+        return
+
+    app.qcms[category][title] = []
+
+    print_fancy("\nAjout des questions pour le titre.", Colors.YELLOW)
+    while True:
+        question_text = input(f"\n{Colors.GREEN}Entrez la question: {Colors.ENDC}")
+        options = []
+
+        print(f"\n{Colors.BLUE}Ajoutez les options (entrez une option vide pour arrêter):{Colors.ENDC}")
+        while True:
+            option = input(f"{Colors.GREEN}Option: {Colors.ENDC}")
+            if option.strip() == "":
+                break
+            options.append(option)
+
+        if len(options) < 2:
+            print(f"{Colors.RED}Une question doit avoir au moins deux options!{Colors.ENDC}")
+            continue
+
+        print(f"\n{Colors.BLUE}Entrez le ou les numéros des réponses correctes (séparés par des espaces):{Colors.ENDC}")
+        print(" ".join([f"{i + 1}. {opt}" for i, opt in enumerate(options)]))
+
+        correct_answers = input(f"{Colors.GREEN}Réponses correctes: {Colors.ENDC}")
+        correct_answers = list(map(int, correct_answers.split()))
+
+        question_type = "multiple" if len(correct_answers) > 1 else "single"
+        app.qcms[category][title].append({
+            "question": question_text,
+            "options": options,
+            "correct": correct_answers,
+            "type": question_type
+        })
+
+        another = input(f"\n{Colors.GREEN}Voulez-vous ajouter une autre question? (o/n): {Colors.ENDC}").lower()
+        if another != 'o':
+            break
+
+    # Sauvegarder les modifications
+    app.save_data('qcms.json', app.qcms)
+    print_fancy("\n✅ QCM ajouté avec succès!", Colors.GREEN)
 
 def display_menu_professeur(app):
     """Affiche le menu pour l'espace professeur."""
@@ -247,7 +327,8 @@ def display_menu_professeur(app):
         clear_screen()
         print_fancy("👨‍🏫 Espace Professeur 👩‍🏫", Colors.YELLOW, bold=True)
         print(f"{Colors.BLUE}1.{Colors.ENDC} Voir les résultats des étudiants")
-        print(f"{Colors.BLUE}2.{Colors.ENDC} Retour au menu principal")
+        print(f"{Colors.BLUE}2.{Colors.ENDC} Ajouter un QCM")
+        print(f"{Colors.BLUE}3.{Colors.ENDC} Retour au menu principal")
 
         choice = input(f"\n{Colors.GREEN}Entrez votre choix (1-2) : {Colors.ENDC}")
 
@@ -255,6 +336,9 @@ def display_menu_professeur(app):
             # Voir les résultats des étudiants
             display_student_results(app)
         elif choice == '2':
+                        # Ajouter un QCM
+            add_qcm(app)
+        elif choice == '3':
             # Retour au menu principal
             break
         else:
