@@ -1,10 +1,14 @@
 {
     "chakib": {
-        "total_score": 299.99999999999994,
-        "quizzes_taken": 5
+        "total_score": 699.9999999999998,
+        "quizzes_taken": 13
     },
     "chakib12": {
         "total_score": 66.66666666666666,
         "quizzes_taken": 1
+    },
+    "chakibuser": {
+        "total_score": 133.33333333333331,
+        "quizzes_taken": 2
     }
 }

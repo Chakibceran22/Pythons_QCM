@@ -125,7 +125,7 @@ class QCMApp:
             return True, f"{Colors.GREEN}Welcome back, {username}!{Colors.ENDC}"
         return False, f"{Colors.RED}Invalid username or password!{Colors.ENDC}"
 
-    def take_qcm(self, category: str, title: str, time_limit: int = 300) -> tuple[bool, str]:
+    def take_qcm(self, category: str, title: str, time_limit: int = 200 ) -> tuple[bool, str]: #that time is for testing we will take it later dont forget guys
         if not self.current_user:
             return False, f"{Colors.RED}Please login first!{Colors.ENDC}"
 
@@ -145,9 +145,10 @@ class QCMApp:
         print_fancy(f"⏳ You have {time_limit // 60} minutes to complete the quiz.\n", Colors.RED)
 
         for i, q in enumerate(questions, 1):
+            # this is the function that calculates the time and if it runs out its stops and then it stops the quiz
             remaining_time = int(end_time - time.time())
             if remaining_time <= 0:
-                print(f"{Colors.RED}Time's up!{Colors.ENDC}")
+                print_fancy("⏰ Time's up! Quiz stopped.", Colors.RED)
                 break
 
             print(f"\n{Colors.BOLD}Question {i}/{len(questions)}{Colors.ENDC}")

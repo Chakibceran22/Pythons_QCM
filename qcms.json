@@ -235,5 +235,33 @@
                 "type": "single"
             }
         ]
+    },
+    "Physique": {
+        "Chimie": [
+            {
+                "question": "what is the degree in which water boils ?",
+                "options": [
+                    "100c",
+                    "300c",
+                    "-4c"
+                ],
+                "correct": [
+                    1
+                ],
+                "type": "single"
+            },
+            {
+                "question": "what is the second element in the periodic table?",
+                "options": [
+                    "Helium",
+                    "Carbon",
+                    "Uranium"
+                ],
+                "correct": [
+                    1
+                ],
+                "type": "single"
+            }
+        ]
     }
 }

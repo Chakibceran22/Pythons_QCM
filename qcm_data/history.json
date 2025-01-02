@@ -75,6 +75,108 @@
             ],
             "total_questions": 3,
             "correct_answers": 1
+        },
+        {
+            "date": "2024-12-30 00:42:51",
+            "category": "Games",
+            "title": "Elden Ring",
+            "score": 33.33333333333333,
+            "time_taken": 29.554215669631958,
+            "answers": [
+                1
+            ],
+            "total_questions": 3,
+            "correct_answers": 1
+        },
+        {
+            "date": "2024-12-30 01:01:07",
+            "category": "Games",
+            "title": "Elden Ring",
+            "score": 33.33333333333333,
+            "time_taken": 26.596925020217896,
+            "answers": [
+                1,
+                1
+            ],
+            "total_questions": 3,
+            "correct_answers": 1
+        },
+        {
+            "date": "2024-12-30 01:10:21",
+            "category": "Games",
+            "title": "Elden Ring",
+            "score": 33.33333333333333,
+            "time_taken": 103.19412422180176,
+            "answers": [
+                1
+            ],
+            "total_questions": 3,
+            "correct_answers": 1
+        },
+        {
+            "date": "2024-12-30 01:13:49",
+            "category": "Games",
+            "title": "Elden Ring",
+            "score": 33.33333333333333,
+            "time_taken": 40.96534061431885,
+            "answers": [
+                1,
+                1
+            ],
+            "total_questions": 3,
+            "correct_answers": 1
+        },
+        {
+            "date": "2024-12-30 01:15:29",
+            "category": "Games",
+            "title": "Elden Ring",
+            "score": 33.33333333333333,
+            "time_taken": 30.178731679916382,
+            "answers": [
+                1,
+                1
+            ],
+            "total_questions": 3,
+            "correct_answers": 1
+        },
+        {
+            "date": "2024-12-30 01:24:44",
+            "category": "Games",
+            "title": "Elden Ring",
+            "score": 33.33333333333333,
+            "time_taken": 350.27265191078186,
+            "answers": [
+                1
+            ],
+            "total_questions": 3,
+            "correct_answers": 1
+        },
+        {
+            "date": "2025-01-02 21:05:01",
+            "category": "Physique",
+            "title": "Chimie",
+            "score": 100.0,
+            "time_taken": 9.85683012008667,
+            "answers": [
+                1,
+                1
+            ],
+            "total_questions": 2,
+            "correct_answers": 2
+        },
+        {
+            "date": "2025-01-02 21:05:57",
+            "category": "Games",
+            "title": "Elden Ring",
+            "score": 100.0,
+            "time_taken": 17.610541820526123,
+            "answers": [
+                1,
+                2,
+                2
+            ],
+            "total_questions": 3,
+            "correct_answers": 3
         }
     ],
     "chakib12": [
@@ -91,6 +193,33 @@
             ],
             "total_questions": 3,
             "correct_answers": 2
+        }
+    ],
+    "chakibuser": [
+        {
+            "date": "2025-01-02 20:57:35",
+            "category": "Games",
+            "title": "GameDev",
+            "score": 100.0,
+            "time_taken": 13.635938882827759,
+            "answers": [
+                2
+            ],
+            "total_questions": 1,
+            "correct_answers": 1
+        },
+        {
+            "date": "2025-01-02 20:58:16",
+            "category": "Games",
+            "title": "Elden Ring",
+            "score": 33.33333333333333,
+            "time_taken": 24.717382431030273,
+            "answers": [
+                1,
+                1
+            ],
+            "total_questions": 3,
+            "correct_answers": 1
         }
     ]
 }
