@@ -78,3 +78,47 @@ Une application interactive de Questionnaires à Choix Multiples (QCM) écrite e
 ---
 
 ## 🖥️ Captures d'écran
+
+### Menu Principal
+Voici une capture d'écran du menu principal de l'application QCM :
+![Menu Principal](screenshots/main_menu.png)
+
+Le menu principal permet aux utilisateurs de choisir entre différentes options, telles que :
+- **Register** : S'inscrire en tant qu'étudiant.
+- **Login** : Se connecter à un compte existant.
+- **Take QCM** : Répondre à un QCM.
+- **View History** : Consulter l'historique des QCM réalisés.
+- **Show Correct Answers** : Voir les réponses correctes d'un QCM.
+- **View Leaderboard** : Consulter le classement des étudiants.
+- **Exit** : Quitter l'application.
+
+### Interface de Connexion (Étudiant)
+Voici une capture d'écran de l'interface de connexion pour les étudiants :
+![Connexion Étudiant](screenshots/student_login.png)
+Les étudiants peuvent entrer leur nom d'utilisateur et leur mot de passe pour accéder à leur compte.
+
+### Interface d'Inscription (Étudiant)
+Voici une capture d'écran de l'interface d'inscription pour les nouveaux étudiants :
+![Inscription Étudiant](screenshots/student_register.png)
+Les nouveaux étudiants peuvent créer un compte en entrant un nom d'utilisateur et un mot de passe.
+
+### Liste des Catégories de QCM
+Voici une capture d'écran de la liste des catégories de QCM disponibles :
+![Catégories de QCM](screenshots/categories.png)
+Les étudiants peuvent choisir une catégorie pour accéder aux QCM correspondants.
+
+### Liste des QCM dans une Catégorie
+Voici une capture d'écran de la liste des QCM disponibles dans une catégorie :
+![Liste des QCM](screenshots/qcm_list.png)
+Les étudiants peuvent choisir un QCM spécifique pour commencer le quiz.
+
+### Exemple de QCM en Cours
+Voici une capture d'écran d'une question pendant un QCM :
+![QCM en Cours](screenshots/qcm_example.png)
+Les étudiants peuvent répondre aux questions en choisissant parmi les options proposées.
+
+### Résultats après un QCM
+Voici une capture d'écran des résultats après avoir terminé un QCM :
+![Résultats](screenshots/results.png)
+Les étudiants peuvent voir leur score, le nombre de réponses correctes et le temps pris pour terminer le QCM.
+
