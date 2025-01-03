@@ -344,9 +344,9 @@ def display_menu_professeur(app):
         print_fancy("👨‍🏫 Espace Professeur 👩‍🏫", Colors.YELLOW, bold=True)
         print(f"{Colors.BLUE}1.{Colors.ENDC} Voir les résultats des étudiants")
         print(f"{Colors.BLUE}2.{Colors.ENDC} Ajouter un QCM")
-        print(f"{Colors.BLUE}3.{Colors.ENDC} Retour au menu principal")
+        print(f"{Colors.RED}3.{Colors.ENDC} Retour au menu principal")
 
-        choice = input(f"\n{Colors.GREEN}Entrez votre choix (1-2) : {Colors.ENDC}")
+        choice = input(f"\n{Colors.GREEN}Entrez votre choix (1-3) : {Colors.ENDC}")
 
         if choice == '1':
             # Voir les résultats des étudiants
