@@ -122,3 +122,47 @@ Voici une capture d'écran des résultats après avoir terminé un QCM :
 ![Résultats](screenshots/results.png)
 Les étudiants peuvent voir leur score, le nombre de réponses correctes et le temps pris pour terminer le QCM.
 
+### Historique des QCM Réalisés
+Voici une capture d'écran de l'historique des QCM réalisés par un étudiant :
+![Historique](screenshots/history.png)
+Les étudiants peuvent consulter leur historique pour voir les QCM qu'ils ont déjà terminés, avec les dates et les scores.
+
+### Interface de Connexion (Professeur)
+Voici une capture d'écran de l'interface de connexion pour les professeurs :
+![Connexion Professeur](screenshots/professor_login.png)
+Les professeurs peuvent se connecter pour accéder aux fonctionnalités de gestion des QCM et des résultats.
+
+### Visualisation des Résultats des Étudiants
+Voici une capture d'écran de l'interface où les professeurs peuvent voir les résultats des étudiants :
+![Résultats des Étudiants](screenshots/student_results.png)
+Les professeurs peuvent consulter les scores et l'historique des QCM réalisés par chaque étudiant.
+
+### Ajout d'un Nouveau QCM
+Voici une capture d'écran de l'interface où les professeurs peuvent ajouter un nouveau QCM :
+![Ajout QCM](screenshots/add_qcm.png)
+Les professeurs peuvent créer de nouveaux QCM en ajoutant des questions, des options et les réponses correctes.
+
+### Leaderboard (Classement des Étudiants)
+Voici une capture d'écran du classement des étudiants basé sur leurs scores :
+![Leaderboard](screenshots/leaderboard.png)
+Les étudiants et les professeurs peuvent consulter le classement pour voir les meilleurs scores.
+
+### Exemple de Fichier JSON
+Voici une capture d'écran d'un exemple de fichier JSON utilisé dans l'application :
+![Fichier JSON](screenshots/qcms_json.png)
+Les fichiers JSON stockent les QCM, les utilisateurs, les résultats et les scores.
+
+### Affichage des Réponses Correctes
+Voici une capture d'écran de l'interface où les étudiants peuvent voir les réponses correctes après un QCM :
+![Réponses Correctes](screenshots/correct_answers.png)
+Les étudiants peuvent consulter les réponses correctes pour comprendre leurs erreurs.
+
+## 📜 Contribuer
+
+- Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
+  1. Forkez le projet.
+  2. Créez une branche pour votre fonctionnalité (git checkout -b feature/NouvelleFonctionnalité).
+  3. Committez vos changements (git commit -m 'Ajout d'une nouvelle fonctionnalité').
+  4. Poussez vers la branche (git push origin feature/NouvelleFonctionnalité).
+  5. Ouvrez une Pull Request.
+  
