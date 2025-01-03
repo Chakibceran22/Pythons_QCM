@@ -48,3 +48,33 @@ Une application interactive de Questionnaires à Choix Multiples (QCM) écrite e
    - history.json : Fichier JSON contenant l'historique des QCM réalisés par les étudiants.
    - scores.json : Fichier JSON stockant les scores cumulés des étudiants.
    - README.md : Fichier de documentation décrivant le projet.
+
+--
+## 📋 Utilisation
+1. Espace Étudiant :
+
+  - Inscrivez-vous ou connectez-vous.
+  - Choisissez une catégorie et un QCM à réaliser.
+  - Répondez aux questions et consultez votre score à la fin.
+  - Consultez votre historique pour voir vos résultats précédents.
+
+2. Espace Professeur :
+
+  - Connectez-vous en tant que professeur en utilisant un compte dédié.
+  - Consultez les résultats des étudiants.
+  - Ajoutez de nouveaux QCM en suivant les instructions à l'écran.
+
+---
+
+## 📂 Exemples de fichiers JSON 
+ - qcms.json : Contient les QCM disponibles, organisés par catégories et titres.
+
+ - users.json : Stocke les informations des utilisateurs (étudiants et professeurs).
+
+ - history.json : Contient l'historique des QCM réalisés par les étudiants.
+
+ - scores.json : Stocke les scores cumulés des étudiants.
+
+---
+
+## 🖥️ Captures d'écran

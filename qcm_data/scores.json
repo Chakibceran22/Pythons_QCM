@@ -2,5 +2,13 @@
     "chakib": {
         "total_score": 0,
         "quizzes_taken": 0
+    },
+    "utilisateur": {
+        "total_score": 0,
+        "quizzes_taken": 0
+    },
+    "user": {
+        "total_score": 66.66666666666666,
+        "quizzes_taken": 1
     }
 }

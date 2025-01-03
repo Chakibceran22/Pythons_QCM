@@ -1,3 +1,29 @@
 {
-    "chakib": []
+    "chakib": [],
+    "utilisateur": [],
+    "user": [
+        {
+            "date": "2025-01-03 21:58:21",
+            "category": "Info",
+            "title": "Programming",
+            "score": 66.66666666666666,
+            "time_taken": 639.3085629940033,
+            "answers": [
+                [
+                    1,
+                    2,
+                    4,
+                    5
+                ],
+                1,
+                [
+                    2,
+                    3,
+                    5
+                ]
+            ],
+            "total_questions": 3,
+            "correct_answers": 2
+        }
+    ]
 }
