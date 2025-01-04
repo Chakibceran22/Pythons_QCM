@@ -1,14 +1,16 @@
 {
     "chakib": {
-        "total_score": 0,
-        "quizzes_taken": 0
+
+        "total_score": 699.9999999999998,
+        "quizzes_taken": 13
     },
-    "utilisateur": {
-        "total_score": 0,
-        "quizzes_taken": 0
-    },
-    "user": {
+    "chakib12": {
         "total_score": 66.66666666666666,
         "quizzes_taken": 1
+    },
+    "chakibuser": {
+        "total_score": 133.33333333333331,
+        "quizzes_taken": 2
+
     }
 }

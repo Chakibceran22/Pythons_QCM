@@ -1,130 +1,267 @@
 {
     "Info": {
-   "Programming": [
-    {
-   "question": "Which of these are Python data types?",
-   "options": [
-   "List",
-   "Dictionary",
-   "Array",
-   "Tuple",
-   "Set"
-   ],
-   "correct": [1, 2, 4, 5],
-   "type": "multiple"
-    },
-    {
-   "question": "What is the purpose of Git?",
-   "options": [
-   "Version Control",
-   "Web Development",
-   "Database Management",
-   "Cloud Computing"
-   ],
-   "correct": 1,
-   "type": "single"
-    },
-    {
-   "question": "Which of these are valid HTTP methods?",
-   "options": [
-   "GET",
-   "POST",
-   "DELETE",
-   "PUSH",
-   "UPDATE"
-   ],
-   "correct": [1, 2, 3],
-   "type": "multiple"
-    }
-   ],
-   "Web Development": [
-    {
-   "question": "What does HTML stand for?",
-   "options": [
-   "HyperText Markup Language",
-   "HighTech Modern Language",
-   "HyperTransfer Markup Language",
-   "HyperText Modern Links"
-   ],
-   "correct": 1,
-   "type": "single"
-    },
-    {
-   "question": "Which of these are JavaScript frameworks?",
-   "options": [
-   "React",
-   "Angular",
-   "Django",
-   "Vue",
-   "Flask"
-   ],
-   "correct": [1, 2, 4],
-   "type": "multiple"
-    }
-   ]
+        "Programming": [
+            {
+                "question": "Which of these are Python data types?",
+                "options": [
+                    "List",
+                    "Dictionary",
+                    "Array",
+                    "Tuple",
+                    "Set"
+                ],
+                "correct": [
+                    1,
+                    2,
+                    4,
+                    5
+                ],
+                "type": "multiple"
+            },
+            {
+                "question": "What is the purpose of Git?",
+                "options": [
+                    "Version Control",
+                    "Web Development",
+                    "Database Management",
+                    "Cloud Computing"
+                ],
+                "correct": 1,
+                "type": "single"
+            },
+            {
+                "question": "Which of these are valid HTTP methods?",
+                "options": [
+                    "GET",
+                    "POST",
+                    "DELETE",
+                    "PUSH",
+                    "UPDATE"
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ],
+                "type": "multiple"
+            }
+        ],
+        "Web Development": [
+            {
+                "question": "What does HTML stand for?",
+                "options": [
+                    "HyperText Markup Language",
+                    "HighTech Modern Language",
+                    "HyperTransfer Markup Language",
+                    "HyperText Modern Links"
+                ],
+                "correct": 1,
+                "type": "single"
+            },
+            {
+                "question": "Which of these are JavaScript frameworks?",
+                "options": [
+                    "React",
+                    "Angular",
+                    "Django",
+                    "Vue",
+                    "Flask"
+                ],
+                "correct": [
+                    1,
+                    2,
+                    4
+                ],
+                "type": "multiple"
+            }
+        ],
+        "Computer Basics": [
+            {
+                "question": "What is the brain of the computer?",
+                "options": [
+                    "CPU",
+                    "RAM",
+                    "Hard Drive",
+                    "GPU"
+                ],
+                "correct": [
+                    1
+                ],
+                "type": "single"
+            },
+            {
+                "question": "What does RAM stand for?",
+                "options": [
+                    "Random Access Memory",
+                    "Read Access Memory",
+                    "Random Allocated Memory",
+                    "Read and Allocate Memory"
+                ],
+                "correct": [
+                    1
+                ],
+                "type": "single"
+            }
+        ]
     },
     "Sport": {
-   "Team Sports": [
-    {
-   "question": "Which of these sports are played with 11 players per team?",
-   "options": [
-   "Football",
-   "Cricket",
-   "Baseball",
-   "Basketball",
-   "Rugby League"
-   ],
-   "correct": [1, 2],
-   "type": "multiple"
+        "Team Sports": [
+            {
+                "question": "Which of these sports are played with 11 players per team?",
+                "options": [
+                    "Football",
+                    "Cricket",
+                    "Baseball",
+                    "Basketball",
+                    "Rugby League"
+                ],
+                "correct": [
+                    1,
+                    2
+                ],
+                "type": "multiple"
+            },
+            {
+                "question": "What is the duration of a standard football (soccer) match?",
+                "options": [
+                    "60 minutes",
+                    "90 minutes",
+                    "120 minutes",
+                    "45 minutes"
+                ],
+                "correct": 2,
+                "type": "single"
+            },
+            {
+                "question": "Which sports use a round ball?",
+                "options": [
+                    "Basketball",
+                    "Volleyball",
+                    "Tennis",
+                    "Rugby",
+                    "Football"
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3,
+                    5
+                ],
+                "type": "multiple"
+            }
+        ],
+        "Olympic Sports": [
+            {
+                "question": "What is the length of an Olympic swimming pool?",
+                "options": [
+                    "25 meters",
+                    "50 meters",
+                    "75 meters",
+                    "100 meters"
+                ],
+                "correct": 2,
+                "type": "single"
+            },
+            {
+                "question": "Which of these sports are in the Summer Olympics?",
+                "options": [
+                    "Swimming",
+                    "Athletics",
+                    "Gymnastics",
+                    "Chess",
+                    "Cricket"
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ],
+                "type": "multiple"
+            }
+        ]
     },
-    {
-   "question": "What is the duration of a standard football (soccer) match?",
-   "options": [
-   "60 minutes",
-   "90 minutes",
-   "120 minutes",
-   "45 minutes"
-   ],
-   "correct": 2,
-   "type": "single"
+    "Games": {
+        "GameDev": [
+            {
+                "question": "what is the name of showing an object in 3d art?",
+                "options": [
+                    "modeling",
+                    "rendering",
+                    "sculpting"
+                ],
+                "correct": [
+                    2
+                ],
+                "type": "single"
+            }
+        ],
+        "Elden Ring": [
+            {
+                "question": "what is the name of the last boss in the game(Spiler if you didnt play i highly recomend you play it)?",
+                "options": [
+                    "Radagon",
+                    "Radhan",
+                    "Malenia",
+                    "Soldier of Godrick"
+                ],
+                "correct": [
+                    1
+                ],
+                "type": "single"
+            },
+            {
+                "question": "what is the weapon class that applies bleed by default?",
+                "options": [
+                    "Hammers",
+                    "Katanas",
+                    "Spears",
+                    "LongSwords"
+                ],
+                "correct": [
+                    2
+                ],
+                "type": "single"
+            },
+            {
+                "question": "what is the weapon you get from defeating Malenia Blade of Miquella ?",
+                "options": [
+                    "Mace",
+                    "Hand of Malenia",
+                    "Spear"
+                ],
+                "correct": [
+                    2
+                ],
+                "type": "single"
+            }
+        ]
     },
-    {
-   "question": "Which sports use a round ball?",
-   "options": [
-   "Basketball",
-   "Volleyball",
-   "Tennis",
-   "Rugby",
-   "Football"
-   ],
-   "correct": [1, 2, 3, 5],
-   "type": "multiple"
+    "Physique": {
+        "Chimie": [
+            {
+                "question": "what is the degree in which water boils ?",
+                "options": [
+                    "100c",
+                    "300c",
+                    "-4c"
+                ],
+                "correct": [
+                    1
+                ],
+                "type": "single"
+            },
+            {
+                "question": "what is the second element in the periodic table?",
+                "options": [
+                    "Helium",
+                    "Carbon",
+                    "Uranium"
+                ],
+                "correct": [
+                    1
+                ],
+                "type": "single"
+            }
+        ]
     }
-   ],
-   "Olympic Sports": [
-    {
-   "question": "What is the length of an Olympic swimming pool?",
-   "options": [
-   "25 meters",
-   "50 meters",
-   "75 meters",
-   "100 meters"
-   ],
-   "correct": 2,
-   "type": "single"
-    },
-    {
-   "question": "Which of these sports are in the Summer Olympics?",
-   "options": [
-   "Swimming",
-   "Athletics",
-   "Gymnastics",
-   "Chess",
-   "Cricket"
-   ],
-   "correct": [1, 2, 3],
-   "type": "multiple"
-    }
-   ]
-    }
-   }
+}
