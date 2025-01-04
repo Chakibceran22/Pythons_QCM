@@ -7,7 +7,7 @@ Une application interactive de Questionnaires à Choix Multiples (QCM) écrite e
 
 ---
 
-## 🚀 Fonctionnalités
+## 🚀 Fonctionnalités 
 
 ### **Espace Étudiant**
 
@@ -55,7 +55,7 @@ Une application interactive de Questionnaires à Choix Multiples (QCM) écrite e
    - scores.json : Fichier JSON stockant les scores cumulés des étudiants.
    - README.md : Fichier de documentation décrivant le projet.
 
---
+---
 ## 📋 Utilisation
 1. Espace Étudiant :
 
