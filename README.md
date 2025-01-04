@@ -11,17 +11,17 @@ Une application interactive de Questionnaires à Choix Multiples (QCM) écrite e
 
 🧑‍🎓 **Espace Étudiant** :
 
-✨ **Inscription et connexion** : Créez un compte ou connectez-vous pour accéder aux QCM.
-✨ **Réalisation de QCM** : Choisissez une catégorie et répondez à des questions.
-✨ **Historique des QCM réalisés** : Consultez vos scores et vos réponses précédentes.
-✨ **Visualisation des scores et réponses correctes** : Comparez vos réponses avec les bonnes réponses.
+- ✨ **Inscription et connexion** : Créez un compte ou connectez-vous pour accéder aux QCM.
+- ✨ **Réalisation de QCM** : Choisissez une catégorie et répondez à des questions.
+- ✨ **Historique des QCM réalisés** : Consultez vos scores et vos réponses précédentes.
+- ✨ **Visualisation des scores et réponses correctes** : Comparez vos réponses avec les bonnes réponses.
 
 
 👨‍🏫 **Espace Professeur** : 
 
-🛠️ **Connexion sécurisée** : Accédez à des outils de gestion spécifiques.
-🛠️ **Visualisation des résultats** : Consultez les performances des étudiants.
-🛠️ **Ajout de nouveaux QCM** : Créez des QCM interactifs avec des questions à choix unique ou multiple.
+- 🛠️ **Connexion sécurisée** : Accédez à des outils de gestion spécifiques.
+- 🛠️ **Visualisation des résultats** : Consultez les performances des étudiants.
+- 🛠️ **Ajout de nouveaux QCM** : Créez des QCM interactifs avec des questions à choix unique ou multiple.
 
 
 ---
