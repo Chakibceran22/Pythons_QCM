@@ -163,6 +163,8 @@ Voici une capture d'écran de l'interface où les étudiants peuvent voir les r�
 ![Réponses Correctes](screenshots/correct_answers.png)
 Les étudiants peuvent consulter les réponses correctes pour comprendre leurs erreurs.
 
+---
+
 ## 📜 Contribuer
 
 - Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
@@ -172,4 +174,37 @@ Les étudiants peuvent consulter les réponses correctes pour comprendre leurs e
   4. Poussez vers la branche (git push origin feature/NouvelleFonctionnalité).
   5. Ouvrez une Pull Request.
   
+---
+
+## 📝 Licence
+Ce projet est sous licence Roumaissa Open-Use 1.0. Consultez le fichier [LICENSE](LICENSE.TXT) pour plus de détails.
+
+---
+
+## 🙌 Crédits
+Ce projet a été créé par :
+- MAMA Maroua
+- DANA Amine
+- GRABA Chakib
+- GUEBLI IKRAM
+
+---
+
+## 🎉 **Remerciements**
+
+---
+
+### 💡 Aux sources d'inspiration
+Ce projet a été réalisé dans le cadre du module **Advanced Programming** de notre faculté d'informatique.  
+Nous remercions notre professeur pour l'encadrement et pour nous avoir confié ce projet enrichissant.
+
+---
+
+### ✨ À tous les contributeurs futurs
+Ce projet est le résultat d'un effort collectif, et nous espérons qu'il continuera à évoluer grâce à de nouveaux talents et idées.  
+Merci à tous ceux qui décideront de contribuer à l'avenir.
+
+---
+
+**Merci à tous de faire partie de cette aventure.** ❤️
 

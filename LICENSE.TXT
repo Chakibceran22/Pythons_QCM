@@ -1,0 +1,26 @@
+Licence du groupe Open-Use 1.0
+
+Copyright (c) [Année] MAMA maroua,GUEBLI ikram ,DANA amine ,GRABA chakib ,
+
+En utilisant, copiant ou modifiant ce logiciel, vous acceptez les termes suivants :
+
+1. **Usage libre** : Vous êtes libre d'utiliser ce logiciel à des fins personnelles, éducatives ou professionnelles, à condition de respecter les droits d'auteur.
+
+2. **Attribution** : Toute copie ou modification de ce logiciel doit inclure la mention :  
+   "Basé sur le logiciel créé par MAMA Roumaissa Maroua."
+
+3. **Distribution** : Vous pouvez distribuer des copies du logiciel ou des versions modifiées, mais uniquement si :
+   - Vous mentionnez clairement l'auteur original.
+   - Vous fournissez un lien vers le dépôt d'origine (si disponible).
+
+4. **Restrictions** :
+   - Ce logiciel ne peut pas être utilisé à des fins illégales, nuisibles ou contraires à l'éthique.
+   - Toute utilisation commerciale nécessite une autorisation écrite préalable de l'auteur.
+
+5. **Clause de non-responsabilité** : Ce logiciel est fourni "tel quel", sans garantie d'aucune sorte. L'auteur décline toute responsabilité pour les conséquences de son utilisation, y compris les erreurs, pertes de données ou dommages éventuels.
+
+6. **Personnalisation** : Vous êtes encouragé(e) à améliorer ce logiciel et à partager vos modifications, dans l'esprit de collaboration et d'apprentissage.
+
+Pour toute question ou demande spécifique, veuillez contacter l'auteur à [votre email ou autre moyen de contact].
+
+---
