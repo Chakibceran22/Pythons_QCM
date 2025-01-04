@@ -9,17 +9,19 @@ Une application interactive de Questionnaires à Choix Multiples (QCM) écrite e
 
 ## 🚀 Fonctionnalités 
 
-### **Espace Étudiant**
+🧑‍🎓 **Espace Étudiant** :
 
-- Inscription et connexion: Les étudiants peuvent créer un compte et se connecter pour accéder aux QCM.
-- Réalisation de QCM par catégorie: Les étudiants peuvent choisir parmi différentes catégories de QCM et répondre aux questions.
-- Affichage de l'historique des QCM réalisés: Les étudiants peuvent consulter leur historique de QCM, y compris les scores et les réponses fournies.
-- Visualisation des réponses correctes et des scores: Après avoir terminé un QCM, les étudiants peuvent voir les réponses correctes et leur score.
+✨ **Inscription et connexion** : Créez un compte ou connectez-vous pour accéder aux QCM.
+✨ **Réalisation de QCM** : Choisissez une catégorie et répondez à des questions.
+✨ **Historique des QCM réalisés** : Consultez vos scores et vos réponses précédentes.
+✨ **Visualisation des scores et réponses correctes** : Comparez vos réponses avec les bonnes réponses.
 
-### **Espace Professeur**
-- Connexion au compte Professeur: Les professeurs peuvent se connecter à un compte dédié pour accéder aux fonctionnalités de gestion.
-- Visualisation des résultats des étudiants: Les professeurs peuvent consulter les résultats de tous les étudiants, y compris les scores et les réponses.
-- Ajout de nouveaux QCM : Les professeurs peuvent ajouter de nouveaux QCM avec des questions et des réponses, en choisissant entre des questions à choix unique ou multiple. 
+
+👨‍🏫 **Espace Professeur** : 
+
+🛠️ **Connexion sécurisée** : Accédez à des outils de gestion spécifiques.
+🛠️ **Visualisation des résultats** : Consultez les performances des étudiants.
+🛠️ **Ajout de nouveaux QCM** : Créez des QCM interactifs avec des questions à choix unique ou multiple.
 
 
 ---
