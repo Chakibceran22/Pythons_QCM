@@ -39,7 +39,7 @@ Une application interactive de Questionnaires à Choix Multiples (QCM) écrite e
 
 1. Clonez le dépôt :
 
-            git clone https://github.com/votre-utilisateur/votre-repo.git
+            git clone https://github.com/Chakibceran22/Pythons_QCM.git
 
 2. Accédez au répertoire du projet :
             cd votre-repo
